@@ -52,7 +52,7 @@ function displayProducts(products) {
 }
 
 function fetchProducts() {
-    fetch('http://foodcatalogue.azurewebsites.net/api/listProducts') // Assuming this endpoint is configured on your backend server
+    fetch('https://foodcatalogue.azurewebsites.net/api/listProducts') // Assuming this endpoint is configured on your backend server
         .then(response => {
             if (!response.ok) {
                 throw new Error('Failed to fetch products');
@@ -69,7 +69,7 @@ function fetchProducts() {
 }
 
 function fetchFilterOptions() {
-    fetch('http://foodcatalogue.azurewebsites.net/api/filterOptions')
+    fetch('https://foodcatalogue.azurewebsites.net/api/filterOptions')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Failed to fetch filter options');
@@ -241,7 +241,7 @@ function applyFilters() {
 
     // Now you can send the selectedFilters object to the backend for processing
     // Example fetch call:
-    fetch('http://foodcatalogue.azurewebsites.net/api/filterProducts', {
+    fetch('https://foodcatalogue.azurewebsites.net/api/filterProducts', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
