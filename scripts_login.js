@@ -14,7 +14,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     console.log("New Product:", newProduct);
  
     // Send newProduct object to backend (e.g., using fetch or AJAX)
-    fetch('http://foodcatalogue.azurewebsites.net/api/login', {
+    fetch('https://foodcatalogue.azurewebsites.net/api/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -57,7 +57,7 @@ document.getElementById('register-form').addEventListener('submit', function(eve
     console.log("New Product:", newProduct);
  
     // Send newProduct object to backend (e.g., using fetch or AJAX)
-    fetch('http://foodcatalogue.azurewebsites.net/api/register', {
+    fetch('https://foodcatalogue.azurewebsites.net/api/register', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
