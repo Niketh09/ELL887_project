@@ -32,7 +32,7 @@ document.getElementById('addItemForm').addEventListener('submit', function(event
     console.log("New Product:", newProduct);
 
     // Send newProduct object to backend (e.g., using fetch or AJAX)
-    fetch('https://foodcatalogue.azurewebsites.net/api/addProduct', {
+    fetch('https://ell887userbackend.azurewebsites.net/api/addProduct', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
